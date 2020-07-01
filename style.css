@@ -1,0 +1,208 @@
+
+/* General Styles */
+
+body {
+  background-color: #fff;
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  color: #000;
+}
+
+img {
+  width: 100%;
+  border: 1px solid #000;
+  filter: hue-rotate(340deg)
+}
+
+img.rounded {
+  border-radius: 8px;
+}
+
+main h2 {
+  font-size: 40px;
+  font-family: Baskerville, serif;
+}
+
+main h3 {
+  font-family: Baskerville, serif;
+  font-size: 28px;
+}
+
+main p, 
+main li {
+  font-family: Baskerville, serif;
+  font-size: 20px;
+  color: #000;
+  line-height: 1.5em;
+  margin-bottom: 0em;
+}
+
+/* Header and Nav */
+
+header {
+  background-color: #000;
+  margin-bottom: 40px;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    padding: 20px -20px;
+    color: #fff;
+    font-family: 'Gill Sans', serif;
+    font-size: 74px;
+    padding-top: 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff; 
+  font-family: Baskerville, serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 20px 0 0;
+  transition-duration: 0.6s;
+}
+
+header nav ul li:last-child a {
+  margin-right: 0;
+}
+
+/* Main */
+
+main .wrapper h2 {
+  padding-left: 10px;
+  margin-bottom: 0;
+}
+
+main .intro {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Links */
+
+main a {
+  text-decoration: none;
+  font-weight: bold;
+  transition-duration: 0.4s;
+}
+
+main a:link    {color: #000}
+main a:visited {color: #000}
+main a:hover   {color: #ff00ff}
+
+/* Contact Form Design */
+
+form {
+  padding: 0 30px;
+  font-family: Baskerville, serif;
+  font-size: 20px;
+  color: #000;
+}
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+}
+
+form button {
+  padding: 15px 16px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background: #fff;
+  color: #000;
+  margin: 0 8px 50px 0;
+  transition-duration: 0.4s;
+}
+
+form button:hover {
+  background-color: #ff00ff;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+/* Styling Footer */
+
+footer {
+    background-color: #000;
+    margin-bottom: 40px;
+    display: block;
+    margin: auto;
+    padding: 20px;
+    color: #fff;
+}
+
+.center-text {
+  text-align: center;
+}
+
+/* Groups and Items (Mobile First) */
+
+.wrapper {
+  width: 100%;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    flex: 1;
+    margin: 10px;
+}
+
+.item-double {
+    flex: 2;
+    margin: 10 px;
+}
+
+/* Groups and Items (For Desktop) */
+
+@media all and (min-width: 800px) {
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+  }
+
+  header h1 {
+    font-size: 50px;
+    margin: 14px 0;
+    padding-top: 0;
+  }
+
+  header nav {
+    margin-top: 14px;
+  }
+
+  header nav ul li a:hover {
+    color: #ff00ff;
+  }
+
+  .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+
+  .group {
+      flex-direction: row;
+  }
+}
