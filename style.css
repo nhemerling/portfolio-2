@@ -1,5 +1,4 @@
 
-
 /* General Styles */
 
 body {
@@ -102,7 +101,7 @@ main a {
 
 main a:link    {color: #000}
 main a:visited {color: #000}
-main a:hover   {color: #ff00ff}
+main a:hover   {color: #000}
 
 /* Contact Form Design */
 
@@ -130,12 +129,6 @@ form button {
   color: #000;
   margin: 0 8px 50px 0;
   transition-duration: 0.4s;
-}
-
-form button:hover {
-  background-color: #ff00ff;
-  border: 1px solid #fff;
-  color: #fff;
 }
 
 /* Styling Footer */
@@ -195,11 +188,23 @@ footer {
   }
 
   header nav ul li a:hover {
-    color: #ff00ff;
+    color: #50bfe6;
+  }
+
+  div ul li a:hover,
+  p a:hover {
+    color: #ff6eff;
   }
 
   form {
     padding: 0 0 0 50px;
+  }
+
+  form button:hover {
+    background-color: #66ff66;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
   }
 
   .wrapper {
@@ -211,3 +216,4 @@ footer {
       flex-direction: row;
   }
 }
+
